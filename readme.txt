@@ -1,4 +1,4 @@
 StudentID:	2013110198
 StudentName:	Soravich Sermsub
-DatetoStudy:	24-June-2023
-ClassTopic:	Basic JavaScript PartI
+DatetoStudy:	15-July-2023
+ClassTopic:	Basic JavaScript PartII
