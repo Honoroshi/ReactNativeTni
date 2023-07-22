@@ -9,6 +9,7 @@ import Couter from './components/Couter';
 import MyInput from './components/MyInput';
 import IncrementCiunter from './components/IncrementCiunter';
 import Form from './components/Form';
+import Login from './components/Login';
 
 export default function App() {
   return (
@@ -20,8 +21,9 @@ export default function App() {
       {/* <CustomText/> */}
       {/* <Couter/> */}
       {/* <MyInput/> */}
-      <IncrementCiunter/>
+      {/* <IncrementCiunter/> */}
       {/* <Form/> */}
+      <Login/>
 
     </View>
   );
