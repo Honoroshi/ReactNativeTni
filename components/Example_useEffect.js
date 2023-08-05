@@ -1,10 +1,37 @@
 import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import React , {useState,useEffect} from "react";
+import axios from "axios";
 
 const Example_useEffect = () => {
+
+  const [data, setData] = useState([]);
+
+  useEffect(()=>{
+    //Fetch data from the API using axios
+    axios.get('https://jsonplaceholder.typicode.com/posts')
+      .then((response) => {
+          //Handle successful response
+          setData(response.data);
+          setIsLoading(false);
+      })
+      .catch(() => {
+          //Handle error
+          console.error('Error fetching data: ', error);
+          setIsLoading(false);
+      })
+},[])//The empty dependency array ensures this effect runs only once when the component mounts
+
   return (
-    <View>
-      <Text>Example_useEffect</Text>
+    <View style = {styles.container}>
+      <Text style={styles.title}>Posts from API:</Text>
+      {
+        data.map((post) => (
+          <View key={post.id} style={styles.post}>
+            <Text style={styles.postTitle}>{post.title}</Text>
+            <Text>{post.body}</Text>
+          </View>
+        ))
+      }
     </View>
   )
 }

@@ -1,12 +1,9 @@
 import { StyleSheet, 
     Text, 
     View,
-    Button,
-    TouchableHighlight,
     TouchableOpacity,
     Image } from 'react-native'
 import React from 'react'
-import { SafeAreaView } from 'react-native-web'
 
 const TouchablePractice = () => {
   return (
