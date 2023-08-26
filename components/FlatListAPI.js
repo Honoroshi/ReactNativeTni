@@ -39,9 +39,10 @@ const FlatListAPI = () => {
   const ItemView = ({item}) => {
     //Function for show 
     return(
+        /*show text when click */
         <Text style={styles.item}
-        onPress={()=>getItem(item)}>
-
+        onPress={()=>getItem(item)}> 
+        
             {item.title}
         </Text>
     )
