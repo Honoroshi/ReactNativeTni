@@ -3,9 +3,10 @@ import { StyleSheet,
     View,
     SafeAreaView,
     ActivityIndicator,
-    FlatList } from 'react-native'
+    FlatList,
+    RefreshControl } from 'react-native'
 import React ,{useState,useEffect} from 'react'
-import { RefreshControl } from 'react-native-web';
+//Don't  use 'react-native-web!!'
 
 const FlatListAPI = () => {
 
