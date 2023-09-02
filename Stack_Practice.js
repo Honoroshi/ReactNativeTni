@@ -4,9 +4,9 @@ import { NavigationContainer } from '@react-navigation/native' // For calling ot
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import HomeScreen from './screens/HomeScreen'
 import DetailsScreen from './screens/DetailsScreen'
-// import FirstPage from './pages/FirstPage'
-// import SecondPage from './pages/SecondPage'
-// import ThirdPage from './pages/ThirdPage'
+import FirstPage from './pages/FirstPage'
+import SecondPage from './pages/SecondPage'
+import ThirdPage from './pages/ThirdPage'
 
 //  function HomeScreen({navigation}) { /*Build Function*/ 
 //   return(
@@ -43,12 +43,11 @@ const App = () => {
 
       {/* <stack.Navigator initialRouteName='FirstPage'> */}
 
-        <stack.Screen name='Home' 
-        component={HomeScreen} 
-        options={{title: 'Overview '}}
-        initialParams={{ itemId: 42}}/> 
-        
-        <stack.Screen name='Details' component={DetailsScreen}/>
+        {/* <stack.Screen name='Home' component={HomeScreen} options={{title: 'Overview '}}/> 
+        <stack.Screen name='Details' component={DetailsScreen}/> */}
+        <stack.Screen name='FirstPage' component={FirstPage}/>
+        <stack.Screen name='SecondPage' component={SecondPage}/>
+        <stack.Screen name='ThirdPage' component={ThirdPage}/> 
 
         {/* <stack.Screen name='Pagename' component={functionName}/> options={{title: 'EditHeaderName'}}*/}
 
