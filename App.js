@@ -35,10 +35,10 @@ const App = () => {
     <NavigationContainer>
 
       <stack.Navigator initialRouteName='First' 
-        // screenOptions={{
-        // headerStyle : {backgroundColor: '#008b8b'},
-        // headerTintColor:'#ffff',
-        // headerTitleStyle:{fontWeight:'bold'}}}
+        screenOptions={{
+        headerStyle : {backgroundColor: '#008b8b'},
+        headerTintColor:'#ffff',
+        headerTitleStyle:{fontWeight:'bold'}}}
       > 
 
       {/* <stack.Navigator initialRouteName='FirstPage'> */}
