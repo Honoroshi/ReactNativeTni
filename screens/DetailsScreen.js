@@ -5,7 +5,7 @@ const DetailsScreen = ({navigation}) => {
     return(
         <View style={{flex:1,alignItems:'center',justifyContent:'center'}}>
           <Text>Detail Screen</Text>
-          <Text>{'\n'}</Text>
+          {/* <Text>{'\n'}</Text>
           <Button
             title='Go to Details...Again'
             onPress={()=>navigation.push('Details')}
@@ -17,7 +17,7 @@ const DetailsScreen = ({navigation}) => {
           <Button
             title='Go Back'
             onPress={()=>navigation.goBack()}
-          />
+          /> */}
         </View>
       )
 }
